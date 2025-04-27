@@ -7,11 +7,10 @@ export default async function handler(req, res) {
   }
 
   try {
-    await dbConnect();
+    await dbConnect(); // always connect first
 
-    const courses = await Course.find();
-    console.log(courses);
-    res.status(200).json(courses);
+    const courses = await Course.find(); // fetch courses
+    res.status(200).json(courses); // send response
   } catch (error) {
     console.error("Error fetching courses:", error);
     res.status(500).json({ error: "Server Error" });

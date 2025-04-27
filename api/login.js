@@ -40,6 +40,8 @@ export default async function handler(req, res) {
   await dbConnect(); // Connect to MongoDB (important in Vercel serverless)
 
   const { email, password } = req.body;
+  console.log(email);
+  console.log(password);
 
   if (!email || !password) {
     return res

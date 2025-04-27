@@ -10,7 +10,8 @@ export default async function login(req, res) {
   try {
     await dbConnect(); // Connect to database
 
-    const { email, password } = req.body;
+    const body = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
+    const { email, password } = body;
 
     if (!email || !password) {
       return res

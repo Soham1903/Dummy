@@ -1,5 +1,5 @@
-import dbConnect from "../lib/db.js"; // Adjust the path if needed
-import Course from "../models/courseSchema.js";
+import dbConnect from "../../lib/db.js"; // Adjust the path if needed
+import Course from "../../models/courseSchema.js";
 
 export default async function handler(req, res) {
   if (req.method === "OPTIONS") {

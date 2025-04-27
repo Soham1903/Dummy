@@ -6,7 +6,7 @@ import User from "../models/userSchema.js";
 
 dotenv.config(); // Load environment variables
 
-export const login = async (req, res) => {
+export default async function login(req, res) {
   try {
     await dbConnect(); // Connect to database
 
@@ -51,4 +51,4 @@ export const login = async (req, res) => {
     console.error("Login error:", error);
     res.status(500).json({ message: "Internal Server Error" });
   }
-};
+}

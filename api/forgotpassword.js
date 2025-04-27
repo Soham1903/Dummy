@@ -44,7 +44,7 @@ export default async function handler(req, res) {
       expiresIn: "15m",
     });
 
-    const resetLink = `http://localhost:5173//reset-password/${resetToken}`;
+    const resetLink = `http://localhost:5173/reset-password/${resetToken}`;
     // ✨ Replace with actual frontend URL, not localhost
 
     const transporter = nodemailer.createTransport({

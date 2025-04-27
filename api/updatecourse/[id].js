@@ -28,7 +28,7 @@ export default async function handler(req, res) {
   try {
     await dbConnect();
 
-    const { id } = req.query; // Vercel way of getting dynamic id from URL
+    const { id } = req.query.id; // Vercel way of getting dynamic id from URL
 
     // Find course
     let course = await Course.findById(id);

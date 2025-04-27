@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
 import dbConnect from "../lib/db.js";
-import User from "../model/userSchema.js";
+import User from "../models/userSchema.js";
 
 dotenv.config(); // Load environment variables
 

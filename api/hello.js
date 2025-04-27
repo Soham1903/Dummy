@@ -9,7 +9,8 @@ export default async function handler(req, res) {
   try {
     await dbConnect();
 
-    const courses = await Course.find({});
+    const courses = await Course.find();
+    console.log(courses);
     res.status(200).json(courses);
   } catch (error) {
     console.error("Error fetching courses:", error);

@@ -3,7 +3,7 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import dotenv from "dotenv";
 
-import dbConnect from "../lib/dbConnect.js"; // We'll need to manually connect to DB inside serverless
+import dbConnect from "../lib/db.js"; // We'll need to manually connect to DB inside serverless
 dotenv.config();
 
 const allowedOrigins = ["*"]; // Adjust this list

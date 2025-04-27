@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcryptjs";
-import dbConnect from "../lib/db.js"; // your db connection helper
+import dbConnect from "../../lib/db.js"; // your db connection helper
 import User from "../model/userSchema.js";
 
 dotenv.config();

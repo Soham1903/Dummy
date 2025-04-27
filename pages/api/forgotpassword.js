@@ -1,8 +1,8 @@
 import dotenv from "dotenv";
 import jwt from "jsonwebtoken";
 import nodemailer from "nodemailer";
-import dbConnect from "../lib/db.js"; // MongoDB connection
-import User from "../models/userSchema.js"; // Adjust path if needed
+import dbConnect from "../../lib/db.js"; // MongoDB connection
+import User from "../../models/userSchema.js"; // Adjust path if needed
 
 dotenv.config();
 

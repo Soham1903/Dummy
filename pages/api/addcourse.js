@@ -1,5 +1,5 @@
-import dbConnect from "../lib/db.js"; // Connect to MongoDB
-import Course from "../models/courseSchema.js"; // Your Mongoose model
+import dbConnect from "../../lib/db.js"; // Connect to MongoDB
+import Course from "../../models/courseSchema.js"; // Your Mongoose model
 import multiparty from "multiparty";
 
 export const config = {

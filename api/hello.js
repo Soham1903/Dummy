@@ -1,6 +1,4 @@
-// /api/getCourses.js
-
-import dbConnect from "../../lib/db.js"; // Connect to MongoDB
+import dbConnect from "../lib/db.js"; // Connect to MongoDB
 import Course from "../../models/Course"; // Your Mongoose model
 
 export default async function handler(req, res) {

@@ -9,7 +9,7 @@ dotenv.config();
 export default async function handler(req, res) {
   // Always set CORS headers first
   res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.setHeader("Access-Control-Allow-Origin", "*"); // You can replace * with specific domain like "https://yourfrontend.com"
+  res.setHeader("Access-Control-Allow-Origin", "http://localhost:5173"); // You can replace * with specific domain like "https://yourfrontend.com"
   res.setHeader("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
 
